@@ -1,9 +1,9 @@
 server:
-  port: 9003
+  port: 9002
   
 spring:
   application:
-    name: badou-cloud-consumerKKKK
+    name: badou-cloud-consumer
   
 info:
   app:
