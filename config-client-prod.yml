@@ -1,0 +1,22 @@
+server:
+  port: 9002
+  
+spring:
+  application:
+    name: adtec-cloud-consumer
+  
+info:
+  app:
+    name: ${spring.application.name}
+    version: 1.0.0
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
+    httptrace:
+      enabled: true
