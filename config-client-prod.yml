@@ -3,7 +3,7 @@ server:
   
 spring:
   application:
-    name: adtec-cloud-consumer
+    name: adtec-cloud-config-client
   
 info:
   app:
