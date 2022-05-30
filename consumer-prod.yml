@@ -3,7 +3,7 @@ server:
   
 spring:
   application:
-    name: badou-cloud-consumer
+    name: adtec-cloud-consumer
   
 info:
   app:
@@ -27,10 +27,10 @@ ribbon:
   eager-load:
     enabled: true
     clients:
-    - badou-cloud-producer
+    - adtec-cloud-producer
 
 
-badou-cloud-producer:
+adtec-cloud-producer:
   ribbon:
     # 代表Ribbon使用的负载均衡策略
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
@@ -49,7 +49,7 @@ badou-cloud-producer:
 
 logging:
   level:
-    '[com.badou.senior.consumer.feign.UserFeignClient]': DEBUG
+    '[com.adtec.cloud.consumer.feign.UserFeignClient]': DEBUG
 
 feign:
   hystrix:
